@@ -19,6 +19,7 @@
         <div class="above-form">This is a signup page that uses vanilla CSS! Below is a styled form! Enjoy!</div>
         <div class="form-container">
           <form class="form-body" action="/submit-form" method="POST">
+            <div class="form-header">Sign Up Today:</div>
             <div class="row">
               <div class="form-group">
                 <label for="first-name">First Name:</label>
@@ -34,9 +35,9 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
               </div>
-              <div class="form-group">
+              <div class="form-group ">
                 <label for="phone-number">Phone Number:</label>
-                <textarea id="phone-number" name="phone-number" required></textarea>
+                <input id="phone-number" name="phone-number" required></input>
               </div>
             </div>
             <div class="row">
@@ -49,9 +50,9 @@
               <input type="password" id="confirm-password" name="confirm-password" required>
               </div>
             </div>
-            <input type="submit" value="Create Account">
+            <input type="submit" class="submit-btn" value="Create Account">
           </form>
-        <div class="below-form"></div>
+        <div class="below-form">Already a user? <a href="#">Log in</a></div>
       </div>
     </div>
   </body>
