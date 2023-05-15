@@ -189,9 +189,10 @@ body {
 
 .above-form {
   flex: 1;
+  text-align: center;
   color: #fff8fd;
-  font-size: 1.5em;
-  font-weight: 500;
+  font-size: 2em;
+  font-weight: 200;
   margin-top: 100px;
   margin-bottom: -400px;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Now</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="validator.js" defer></script>
   </head>
   <body>
     <div class="main-container">
@@ -16,10 +17,12 @@
         </div>
       </div>
       <div class="content-container">
-        <div class="above-form">This is a signup page that uses vanilla CSS! Below is a styled form! Enjoy!</div>
+        <div class="above-form">This is a signup page that uses vanilla CSS!
+          Below is a styled form that implements JavaScript to validate if the password confirmation matches the password!
+        </div>
         <div class="form-container">
-          <form class="form-body" action="/submit-form" method="POST">
-            <div class="form-header">Sign Up Today:</div>
+          <form class="form-body" id="form-mother" action="" method="POST">
+            <div class="form-header">Sign Up Today: <span class="error-text" id="error-text"></span></div>
             <div class="row">
               <div class="form-group">
                 <label for="first-name">First Name:</label>
@@ -50,7 +53,7 @@
               <input type="password" id="confirm-password" name="confirm-password" required>
               </div>
             </div>
-            <input type="submit" class="submit-btn" value="Create Account">
+            <input type="submit" class="submit-btn" id="submit-btn" value="Create Account">
           </form>
         <div class="below-form">Already a user? <a href="#">Log in</a></div>
       </div>
